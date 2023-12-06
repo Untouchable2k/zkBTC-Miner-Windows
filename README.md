@@ -24,7 +24,7 @@ Also must fill in account and private key in _zkBitcoinMiner.conf file
 
 0b) Nvidia driver, and/or AMD driver.
 
-1) Open ABASminer Conf file
+1) Open _zkBitcoinMiner.Conf file
 
 2) Below are the following arguments that may/need to be changed :
 
