@@ -87,7 +87,7 @@ You can either add an issue in the repository, or find me in discord (Untouchabl
 
 Thanks for trying out this miner!
 
- Suggested a new account with minimial Arbitrum Ethereum to begin (5-10$).
+ Suggested a new account with minimial ZK Sync Era Ethereum to begin (10-30$).
  
 Runs on Windows x64.
 
@@ -204,7 +204,7 @@ Options:
 NOTES
 Do refer to 'GuideForSoloMining.txt' on how to get started.
 Configuration is based on CLI (similar to ccminer), except ".abi" files are required for new tokens (You can manually create one and copy from etherscan.com -> Contract -> Code -> Contract ABI).
-Note that there is a configuration file "0xPOWminer.conf" that saves previous CLI parameters/settings, delete it prior to changing CLI parameters.
+Note that there is a configuration file "_zkBitcoinMiner.conf" that saves previous CLI parameters/settings, delete it prior to changing CLI parameters.
 Sample CLI launch parameter can be found in the ".bat" file found together with this miner, please refer to it if you need help.
 You will have to supply your own BSC address (or Private key if you solo mine). It is your own responsibility to mine to the correct address/account.
 It is recommended to use your own web3api (e.g. Infura / Geth / Parity) if you solo mine, default value is for TESTING PURPOSE ONLY.
@@ -212,4 +212,4 @@ There is a default of 2.0% dev fee (Once every 50th nonce: starting from 11th if
 Dev fee in solo mining is by sending the current reward amount after the successful minted block, using the same gas fee as provided in 'gasToMine'.
 In the case if the compute load for your GPU is not >= 99%, you can adjust the intensity via (amdIntensity/cudaIntensity/intelIntensity).
 
-Please feedback your results and suggestions so that I can improve the miner. You can either add an issue in the repository, or find me in discord (Amano7). Thanks for trying out this miner!
+Please feedback your results and suggestions so that I can improve the miner. You can either add an issue in the repository, or find me in discord (untouchable2k). Thanks for trying out this miner!
