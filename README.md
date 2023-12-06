@@ -60,7 +60,7 @@ Also must fill in account and private key in _zkBitcoinMiner.conf file
   - "NFTApiPath": "$.result.NextNFTMint",
   - "NFTApiPathID": "$.result.NextNFTMintID",
 
-4b) or Your AbasMiner.conf should look like this=
+4b) or Your _zkBitcoinMiner.conf should look like this=
   - "NFTApiURL": "",
   - "NFTApiPath": "0x1A20D328CF126dD39e03b29979c0815DD101321e",
   - "NFTApiPathID": "447",
@@ -78,8 +78,7 @@ Also must fill in account and private key in _zkBitcoinMiner.conf file
   - ex: "ETHwithMints": false,
   - ex2: "ETHwithMints": true,
 
-"ERC20Addresses": 
-5a) Save and run '_zkBitcoin Miner Start.bat file' in this directory.
+7) Save and run '_zkBitcoin Miner Start.bat file' in this directory.
 
 ### Notes
 
@@ -93,7 +92,7 @@ Thanks for trying out this miner!
 Runs on Windows x64.
 
 LICENSE
-ABASMiner is licensed under the Apache License, Version 2.0 (the "License");
+zkBitcoin Miner is licensed under the Apache License, Version 2.0 (the "License");
 Libraries are included in the Software under the following license terms:
 - libkeccak-tiny https://github.com/coruus/keccak-tiny/
 - Nethereum https://github.com/Nethereum/Nethereum/blob/master/LICENSE.md
@@ -102,7 +101,7 @@ Libraries are included in the Software under the following license terms:
 - Bouncy Castle https://www.bouncycastle.org/licence.html
 
 
-Usage: ABASminer [OPTIONS]
+Usage: _zkBitcoinMiner [OPTIONS]
 
 Options:
 
@@ -167,6 +166,18 @@ Options:
   address                 (Pool only) Miner's ethereum address (default: developer's address)
 
   privateKey              (Solo only) Miner's private key
+
+  MinzkBTCperMint         (Solo only) Minimum amount of zkBitcoin to allow the mint to succeed
+
+  NFTApiURL               (Solo only) URL to the API for NFT minting
+  
+  NFTApiPath              (Solo only) Path variable for API to get the NFT contract address or Just the contract address of NFT you want to mint
+  
+  NFTApiPathID            (Solo only) Path variable for API to get the NFT ID or Just the NFTs ID you want to mint
+  
+  ERC20Addresses          (Solo only) Sepcifies the ERC20 tokens to mint.  Must be in an array with quotes around the contract address
+  
+  ETHwithMints            (Solo only) Sepcifies wether to call a cheaper function that doesn't transfer ETH to you from the contract (in case its dust).  Either false or true
 
   gasToMine               (Solo only) Gas price to mine in GWei (default: 3, decimals allowed; note: will override lower dynamic gas price)
 
