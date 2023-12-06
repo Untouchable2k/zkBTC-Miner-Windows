@@ -105,101 +105,101 @@ Usage: _zkBitcoinMiner [OPTIONS]
 
 Options:
 
-  help                    Display this help text and exit
+-  help                    Display this help text and exit
 
-  allowCPU                Allow to use CPU, may slow down system (default: false)
+-  allowCPU                Allow to use CPU, may slow down system (default: false)
 
-  cpuAffinity             Comma separated list of CPU affinity ID to use (default: all odd number logical processors)
+-  cpuAffinity             Comma separated list of CPU affinity ID to use (default: all odd number logical processors)
 
-  allowIntel              Allow to use Intel GPU (OpenCL) (default: false)
+-  allowIntel              Allow to use Intel GPU (OpenCL) (default: false)
 
-  allowAMD                Allow to use AMD GPU (OpenCL) (default: true)
+-  allowAMD                Allow to use AMD GPU (OpenCL) (default: true)
 
-  allowCUDA               Allow to use Nvidia GPU (CUDA) (default: true)
+-  allowCUDA               Allow to use Nvidia GPU (CUDA) (default: true)
 
-  intelIntensity          GPU (Intel OpenCL) intensity (default: 17, decimals allowed)
+-  intelIntensity          GPU (Intel OpenCL) intensity (default: 17, decimals allowed)
 
-  listAmdDevices          List of all AMD (OpenCL) devices in this system and exit (device ID: GPU name)
+-  listAmdDevices          List of all AMD (OpenCL) devices in this system and exit (device ID: GPU name)
 
-  amdDevice               Comma separated list of AMD (OpenCL) devices to use (default: all devices)
+-  amdDevice               Comma separated list of AMD (OpenCL) devices to use (default: all devices)
 
-  amdIntensity            GPU (AMD OpenCL) intensity (default: 24.056, decimals allowed)
+-  amdIntensity            GPU (AMD OpenCL) intensity (default: 24.056, decimals allowed)
 
-  listCudaDevices         List of all CUDA devices in this system (device ID: GPU name)
+-  listCudaDevices         List of all CUDA devices in this system (device ID: GPU name)
 
-  cudaDevice              Comma separated list of CUDA devices to use (default: all devices)
+-  cudaDevice              Comma separated list of CUDA devices to use (default: all devices)
 
-  cudaIntensity           GPU (CUDA) intensity (default: auto, decimals allowed)
+-  cudaIntensity           GPU (CUDA) intensity (default: auto, decimals allowed)
 
-  minerJsonAPI            'http://IP:port/' for the miner JSON-API (default: http://127.0.0.1:4078 [0 disabled])
+-  minerJsonAPI            'http://IP:port/' for the miner JSON-API (default: http://127.0.0.1:4078 [0 disabled])
 
-  minerCcminerAPI         'IP:port' for the ccminer-style API (default: 127.0.0.1:4068 [0 disabled])
+-  minerCcminerAPI         'IP:port' for the ccminer-style API (default: 127.0.0.1:4068 [0 disabled])
 
-  overrideMaxTarget       (Pool only) Use maximum target and skips query from web3
+-  overrideMaxTarget       (Pool only) Use maximum target and skips query from web3
 
-  customDifficulty        (Pool only) Set custom difficulity (check with your pool operator)
+-  customDifficulty        (Pool only) Set custom difficulity (check with your pool operator)
 
-  maxScanRetry            Number of retries to scan for new work (default: 3)
+-  maxScanRetry            Number of retries to scan for new work (default: 3)
 
-  pauseOnFailedScans      Pauses mining after number of connection fails, including secondary and retries (default: 3)
+-  pauseOnFailedScans      Pauses mining after number of connection fails, including secondary and retries (default: 3)
 
-  submitStale             Submit stale jobs, may create more rejected shares (default: false)
+-  submitStale             Submit stale jobs, may create more rejected shares (default: false)
 
-  abiFile                 Token abi in a file (default: '0xBTC.abi' in the same folder as this miner)
+-  abiFile                 Token abi in a file (default: '0xBTC.abi' in the same folder as this miner)
 
-  web3api                 User-defined web3 provider URL (default: Infura mainnet provider [dev account, for TESTING PURPOSE only])
+-  web3api                 User-defined web3 provider URL (default: Infura mainnet provider [dev account, for TESTING PURPOSE only])
 
-  contract                Token contract address (default: 0xbtc contract address)
+-  contract                Token contract address (default: 0xbtc contract address)
 
-  hashrateUpdateInterval  Interval (miliseconds) for GPU hashrate logs (default: 30000)
+-  hashrateUpdateInterval  Interval (miliseconds) for GPU hashrate logs (default: 30000)
 
-  networkUpdateInterval   Interval (miliseconds) to scan for new work (default: 15000)
+-  networkUpdateInterval   Interval (miliseconds) to scan for new work (default: 15000)
 
-  masterMode              Enable Master mode that virtually acts as a \"pool\" for slave miners connecting to it (default: false [requires admin/sudo mode])
+-  masterMode              Enable Master mode that virtually acts as a \"pool\" for slave miners connecting to it (default: false [requires admin/sudo mode])
 
-  masterURL               Master instance IP:port, slave mode if 'masterMode' is false (default: none [if 'masterMode' is true, default: http://{localIP}:4080/])
+-  masterURL               Master instance IP:port, slave mode if 'masterMode' is false (default: none [if 'masterMode' is true, default: http://{localIP}:4080/])
 
-  slaveUpdateInterval     (Slave only)Interval (miliseconds) to scan for new work (default: 5000)
+-  slaveUpdateInterval     (Slave only)Interval (miliseconds) to scan for new work (default: 5000)
 
-  kingAddress             Add MiningKing address to nonce, only CPU mining supported (default: none)
+-  kingAddress             Add MiningKing address to nonce, only CPU mining supported (default: none)
 
-  address                 (Pool only) Miner's ethereum address (default: developer's address)
+-  address                 (Pool only) Miner's ethereum address (default: developer's address)
 
-  privateKey              (Solo only) Miner's private key
+-  privateKey              (Solo only) Miner's private key
 
-  MinzkBTCperMint         (Solo only) Minimum amount of zkBitcoin to allow the mint to succeed
+-  MinzkBTCperMint         (Solo only) Minimum amount of zkBitcoin to allow the mint to succeed
 
-  NFTApiURL               (Solo only) URL to the API for NFT minting
+-  NFTApiURL               (Solo only) URL to the API for NFT minting
   
-  NFTApiPath              (Solo only) Path variable for API to get the NFT contract address or Just the contract address of NFT you want to mint
+-  NFTApiPath              (Solo only) Path variable for API to get the NFT contract address or Just the contract address of NFT you want to mint
+ 
+-  NFTApiPathID            (Solo only) Path variable for API to get the NFT ID or Just the NFTs ID you want to mint
   
-  NFTApiPathID            (Solo only) Path variable for API to get the NFT ID or Just the NFTs ID you want to mint
+-  ERC20Addresses          (Solo only) Sepcifies the ERC20 tokens to mint.  Must be in an array with quotes around the contract address
   
-  ERC20Addresses          (Solo only) Sepcifies the ERC20 tokens to mint.  Must be in an array with quotes around the contract address
-  
-  ETHwithMints            (Solo only) Sepcifies wether to call a cheaper function that doesn't transfer ETH to you from the contract (in case its dust).  Either false or true
+-  ETHwithMints            (Solo only) Sepcifies wether to call a cheaper function that doesn't transfer ETH to you from the contract (in case its dust).  Either false or true
 
-  gasToMine               (Solo only) Gas price to mine in GWei (default: 3, decimals allowed; note: will override lower dynamic gas price)
+-  gasToMine               (Solo only) Gas price to mine in GWei (default: 3, decimals allowed; note: will override lower dynamic gas price)
 
-  gasLimit                (Solo only) Gas limit to submit proof of work (default: 1704624)
+-  gasLimit                (Solo only) Gas limit to submit proof of work (default: 1704624)
 
-  gasApiURL               (Solo only) Get dynamic gas price to mine from this JSON API URL (note: leave empty to disable)
+-  gasApiURL               (Solo only) Get dynamic gas price to mine from this JSON API URL (note: leave empty to disable)
 
-  gasApiPath              (Solo only) JSON path expression to retrieve dynamic gas price value from 'gasApiURL'
+-  gasApiPath              (Solo only) JSON path expression to retrieve dynamic gas price value from 'gasApiURL'
 
-  gasApiMultiplier        (Solo only) Multiplier to dynamic gas price value from 'gasApiURL' => 'gasApiPath' (note: use 0.1 for EthGasStation API)
+-  gasApiMultiplier        (Solo only) Multiplier to dynamic gas price value from 'gasApiURL' => 'gasApiPath' (note: use 0.1 for EthGasStation API)
 
-  gasApiOffset            (Solo only) Offset to dynamic gas price value from 'gasApiURL' => 'gasApiPath' (after 'gasApiMultiplier', decimals allowed)
+-  gasApiOffset            (Solo only) Offset to dynamic gas price value from 'gasApiURL' => 'gasApiPath' (after 'gasApiMultiplier', decimals allowed)
 
-  gasApiMax               (Solo only) Maximum gas price to mine in GWei from API (default: 5, decimals allowed)
+-  gasApiMax               (Solo only) Maximum gas price to mine in GWei from API (default: 5, decimals allowed)
 
-  pool                    (Pool only) URL of pool mining server (default: http://bnbtcpool.crnx.org:80)
+-  pool                    (Pool only) URL of pool mining server (default: http://bnbtcpool.crnx.org:80)
 
-  secondaryPool           (Optional) URL of failover pool mining server
+-  secondaryPool           (Optional) URL of failover pool mining server
 
-  logFile                 Enables logging of console output to '{appPath}\\Log\\{yyyy-MM-dd}.log' (default: false)
+-  logFile                 Enables logging of console output to '{appPath}\\Log\\{yyyy-MM-dd}.log' (default: false)
 
-  devFee                  Set developer fee in percentage (default: 2.0%, minimum: 2.0%)
+-  devFee                  Set developer fee in percentage (default: 2.0%, minimum: 2.0%)
 
 NOTES
 Do refer to 'GuideForSoloMining.txt' on how to get started.
