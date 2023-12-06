@@ -208,8 +208,7 @@ Note that there is a configuration file "_zkBitcoinMiner.conf" that saves previo
 Sample CLI launch parameter can be found in the ".bat" file found together with this miner, please refer to it if you need help.
 You will have to supply your own BSC address (or Private key if you solo mine). It is your own responsibility to mine to the correct address/account.
 It is recommended to use your own web3api (e.g. Infura / Geth / Parity) if you solo mine, default value is for TESTING PURPOSE ONLY.
-There is a default of 2.0% dev fee (Once every 50th nonce: starting from 11th if Pool mine, or starting from 50th if Solo mine).
-Dev fee in solo mining is by sending the current reward amount after the successful minted block, using the same gas fee as provided in 'gasToMine'.
+There is a default of 2.0% dev fee .
 In the case if the compute load for your GPU is not >= 99%, you can adjust the intensity via (amdIntensity/cudaIntensity/intelIntensity).
 
 Please feedback your results and suggestions so that I can improve the miner. You can either add an issue in the repository, or find me in discord (untouchable2k). Thanks for trying out this miner!
